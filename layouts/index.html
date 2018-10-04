@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+  {{ partial "head.html" . }}
+
+  <body>
+
+    <div id="all">
+
+
+        <section class="bar nopadding frontbg half-screen-height">
+            <div class="red-mask"></div>
+        <header>
+
+          {{ partial "top.html" . }}
+
+            <div data-spy="affix" data-offset-top="200">
+                <div class="navbar navbar-default yamm" role="navigation" id="navbar">
+
+                    <div class="container">
+                        <div class="navbar-header">
+                            <div class="navbar-buttons">
+                                    <div class="navbar-collapse collapse" id="navigation">
+                                        <ul class="nav navbar-nav navbar-right">
+
+                                        <li class="dropdown">
+                                            <a style="color: #fff;" href="{{ .Site.BaseURL }}">Home</a>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a style="color: #fff;" href="{{ .Site.BaseURL }}/pages/people">People</a>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a style="color: #fff;" href="{{ .Site.BaseURL }}/pages/publications">Publications</a>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a style="color: #fff;" href="{{ .Site.BaseURL }}/pages/news">News</a>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a style="color: #fff;" href="{{ .Site.BaseURL }}/pages/contact">Contact</a>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a style="color: #fff;" href="{{ .Site.BaseURL }}/pages/about">About</a>
+                                        </li>
+
+                                        </ul>
+                                    </div>
+                                <button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse" data-target="#navigation">
+                                <span class="sr-only">{{ i18n "navToggle" }}</span>
+                                    <i class="fa fa-align-justify"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="collapse clearfix" id="search">
+
+                            <form class="navbar-form" role="search">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search">
+                                    <span class="input-group-btn">
+
+                                <button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
+
+                            </span>
+                                </div>
+                            </form>
+
+                        </div>
+                        <!--/.nav-collapse -->
+
+                    </div>
+                </div>
+            </div>
+            <!-- /#navbar -->
+        </header>
+            <div id='title-container' class="container title-container">
+                <div class="lead" style="margin: 0px;">Sunnyland</div>
+
+                <div class="container" padding=0 margin=0>
+
+                    <h2 style="color: #eee;">Northeastern Chemistry Lab</h2>
+
+                    <div class="lead" text-align="center">{{ .Site.Params.description }}</div>
+                </div>
+            </div>
+        </section>
+
+
+        {{ partial "carousel.html" . }}
+
+        {{ partial "features.html" . }}
+
+        {{ partial "testimonials.html" . }}
+
+        {{ partial "see_more.html" . }}
+
+        {{ partial "recent_posts.html" . }}
+
+        {{ partial "clients.html" . }}
+        
+        <div id="spacer" style="height: 229px;"/>
+
+        {{ partial "footer.html" . }}
+
+    </div>
+    <!-- /#all -->
+
+    {{ partial "scripts.html" . }}
+
+  </body>
+</html>
