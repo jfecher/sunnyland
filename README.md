@@ -1,11 +1,10 @@
 # Sunnyland
 The Sunnyland Chemistry Website
 
-
 This project uses [hugo](https://gohugo.io/) with the [universal](https://themes.gohugo.io/theme/hugo-universal-theme/)
 theme to generate a static site from a mixture of markdown, yaml, and toml.
 
-The website is currently private but will soon be stationed at https://web.northeastern.edu/sunnyland/
+The repo is the source for the website stationed at https://web.northeastern.edu/sunnyland/
 
 ## Contributing
 
