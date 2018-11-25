@@ -2,8 +2,12 @@
 $(document).ready(function(){
     $('.expanded').hide();
 
-    $('.table-sorted').tablesorter({
+    $('#publications').tablesorter({
         sortList: [[1, 1]]
+    });
+
+    $('#news').tablesorter({
+        sortList: [[2, 1]]
     });
 
     $('.expanded a, .collapsed a').click(function(eve){
